@@ -26,3 +26,9 @@ Starting tests: ./start.sh
 Tests are visible in robot/main.robot  
 Keywords are visible in python/Keywords.py  
 Results will be visible in output.xml, log.html and report.html
+
+## PCB
+
+Pins of Raspberry Pi had to be connected with suitable pins of KL05Z.  
+In order to implement this idea a PCB shield has been designed with usage of KiCad ver. 5.1.9.  
+
