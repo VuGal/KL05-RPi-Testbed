@@ -2,7 +2,9 @@
   
 The project goal was to create a testbed device for FRDM-KL05Z boards. Raspberry Pi 3B+ was used to enable Python and Robot Framework usage.
 The testbed board is connected to the RPi from one side and to the tested board from the other ("sandwich" connection). Also USB connection 
-between RPi and KL05Z is needed to enable USB-CDC communication. Tests are launched from Linux environment on RPi.
+between RPi and KL05Z is needed to enable USB-CDC communication. Tests are launched from Linux environment on RPi. Tests included into this project
+are focused on GPIO testing - all GPIO ports are tested with the exception of D0 and D1 because they are needed for correct UART communication
+(it's needed anyway to test other ports so D0 and D1 behavior is fine if the UART communication works).
   
 ## KL05Z
 Keil uVision5 was used during KL05Z code development. Output .hex file (.hex generation must be enabled in IDE settings) should be put into /home/pi/RobotWorkspace/files/ path on RPi.
