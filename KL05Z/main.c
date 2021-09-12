@@ -12,7 +12,7 @@ static char message[100] = "";
 static char* response = "";
 
 
-int main(void){
+int main(void) {
 	
 	uartInitialize();
 	rtcInitialize();
