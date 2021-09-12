@@ -9,7 +9,14 @@ import shutil
 
 class Keywords:
     def __init__(self):
-        self.gpioDict = {18: '10000000000000000000', 23: '01000000000000000000', 24: '00100000000000000000', 6: '00010000000000000000', 7: '00001000000000000000', 8: '00000100000000000000', 14: '00000010000000000000', 15: '00000001000000000000', 25: '00000000100000000000', 12: '00000000010000000000', 16: '00000000001000000000', 20: '00000000000100000000', 21: '00000000000010000000', 26: '00000000000001000000', 19: '00000000000000100000', 13: '00000000000000010000', 17: '00000000000000001000', 27: '00000000000000000100', 22: '00000000000000000010', 10: '00000000000000000001'}
+        self.gpioDict = {18: '10000000000000000000', 23: '01000000000000000000', 24: '00100000000000000000',
+                         6: '00010000000000000000', 7: '00001000000000000000', 8: '00000100000000000000',
+                         14: '00000010000000000000', 15: '00000001000000000000', 25: '00000000100000000000',
+                         12: '00000000010000000000', 16: '00000000001000000000', 20: '00000000000100000000',
+                         21: '00000000000010000000', 26: '00000000000001000000', 19: '00000000000000100000',
+                         13: '00000000000000010000', 17: '00000000000000001000', 27: '00000000000000000100',
+                         22: '00000000000000000010', 10: '00000000000000000001'}
+
     def _mapBinToGPIO(self, argbin):
         list1 = []
         list2 = []
@@ -19,6 +26,7 @@ class Keywords:
             else:
                 list2.append(key)
         return list1, list2
+
     @keyword(name="Check Input GPIO Value")
     def check_input_gpio_value(self, argbin):
         gpioReadListHigh, gpioReadListlow  = self._mapBinToGPIO(argbin)
@@ -109,6 +117,7 @@ class Keywords:
         if mode == "out" and len(failList) > 0:
             raise Exception(f"Pin number {failList} is not set as OUTPUT")
         return 1
+
     def _readlineCR(self, port):
         rv = ""
         ts = time.time()
@@ -134,6 +143,7 @@ class Keywords:
         if not rcv[:-1] == response_string:
             raise Exception(f"Strings doesn't match, expected {response_string}, got {rcv}")
         return 1
+
     @keyword(name="Map Bin to String To Send")
     def map_bin_to_string_to_send(sel, argbin):
         argbin1 = bin(argbin)
