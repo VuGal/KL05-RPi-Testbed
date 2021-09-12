@@ -3,13 +3,13 @@
 ## KL05Z
 Keil uVision5 was used during KL05Z code development. .hex file generation must be enabled.
 
-Source code files description:
-main.c - file containing the main loop and calls of necessary initializations (GPIO, RTC, UART)
-operations.c / operations.h - handlers for commands received via UART messages
-gpio.c / gpio.h - GPIO initialization and functions responsible for getting and setting pin state
-rtc.c / rtc.h - Real-time clock (RTC) configuration
-uart.c / uart.h - UART initialization and functions responsible for receiving and sending message
-extra.c / extra.h - helper functions
+Source code files description:  
+<b>main.c</b> - file containing the main loop and calls of necessary initializations (GPIO, RTC, UART)  
+<b>operations.c / operations.h</b></b> - handlers for commands received via UART messages  
+<b>gpio.c / gpio.h</b> - GPIO initialization and functions responsible for getting and setting pin state  
+<b>rtc.c / rtc.h</b> - Real-time clock (RTC) configuration  
+<b>uart.c / uart.h</b> - UART initialization and functions responsible for receiving and sending message  
+<b>extra.c / extra.h</b> - helper functions  
 
 ## Raspberry Pi
 Requirements:  
