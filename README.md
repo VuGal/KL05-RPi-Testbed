@@ -1,4 +1,4 @@
-# KL05_RPi_Testbed
+# FRDM-KL05Z Testbed device using Raspberry Pi 3B+
 
 ## KL05Z
 Keil uVision5 was used during KL05Z code development. .hex file generation must be enabled.
