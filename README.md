@@ -17,6 +17,7 @@ Source code files description:
 
 ## Raspberry Pi
 Requirements:  
+Raspberry Pi OS - May 2021 version  
 Python 3.7.3  
 Python libraries: serial, RPi.GPIO  
 Robot Framework 4.1  
