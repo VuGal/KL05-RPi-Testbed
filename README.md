@@ -1,5 +1,9 @@
 # FRDM-KL05Z Testbed device using Raspberry Pi 3B+
-
+  
+The project goal was to create a testbed device for FRDM-KL05Z boards. Raspberry Pi 3B+ was used to enable Python and Robot Framework usage.
+The testbed board is connected to the RPi from one side and to the tested board from the other ("sandwich" connection). Also USB connection 
+between RPi and KL05Z is needed to enable USB-CDC communication. Tests are launched from Linux environment on RPi.
+  
 ## KL05Z
 Keil uVision5 was used during KL05Z code development. .hex file generation must be enabled.
 
