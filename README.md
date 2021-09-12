@@ -10,4 +10,4 @@ Usage:
 Starting tests: ./start.sh  
 Tests are visible in robot/main.robot  
 Keywords are visible in python/Keywords.py  
-
+Results will be visible in output.xml, log.html and report.html
