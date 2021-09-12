@@ -31,4 +31,5 @@ Results will be visible in output.xml, log.html and report.html
 
 Pins of Raspberry Pi had to be connected with suitable pins of KL05Z.  
 In order to implement this idea a PCB shield has been designed with usage of KiCad ver. 5.1.9.  
+The 1 kΩ resistors were added in each connection to avoid current overdrive in case of different GPIO logic states on each side.
 
