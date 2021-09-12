@@ -5,7 +5,7 @@ The testbed board is connected to the RPi from one side and to the tested board 
 between RPi and KL05Z is needed to enable USB-CDC communication. Tests are launched from Linux environment on RPi.
   
 ## KL05Z
-Keil uVision5 was used during KL05Z code development. .hex file generation must be enabled.
+Keil uVision5 was used during KL05Z code development. Output .hex file (.hex generation must be enabled in IDE settings) should be put into /home/pi/RobotWorkspace/files/ path on RPi.
 
 Source code files description:  
 <b>main.c</b> - file containing the main loop and calls of necessary initializations (GPIO, RTC, UART)  
@@ -23,10 +23,11 @@ Python libraries: serial, RPi.GPIO
 Robot Framework 4.1  
   
 Usage:  
+Files should be put into /home/pi/RobotWorkspace/ path.
 Starting tests: ./start.sh  
 Tests are visible in robot/main.robot  
 Keywords are visible in python/Keywords.py  
-Results will be visible in output.xml, log.html and report.html
+Results will be visible in output.xml, log.html and report.html  
 
 ## PCB
 
